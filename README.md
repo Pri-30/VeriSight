@@ -1,73 +1,208 @@
-# Welcome to your Lovable project
+# VeriSight
 
-## Project info
+## Image Authenticity Verification Platform
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+VeriSight is a web-based image authenticity verification platform designed to help users identify manipulated and AI-generated images. The project combines Error Level Analysis (ELA) with Machine Learning techniques to provide a simple and accessible way to assess image authenticity.
 
-## How can I edit this code?
+Developed as a hackathon MVP, VeriSight demonstrates how image forensics and machine learning can be used to improve digital trust in an era of rapidly growing AI-generated content.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## Live Demo
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+https://verisight-forge-guardian-main.vercel.app/
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## Problem Statement
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+The rapid advancement of AI tools has made it easier than ever to generate realistic fake images and manipulated visual content. As a result, users often struggle to determine whether an image is authentic.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Without accessible verification tools, misinformation can spread quickly, reducing public trust and influencing opinions.
 
-Follow these steps:
+VeriSight addresses this challenge by providing a user-friendly platform that analyzes uploaded images and generates authenticity insights.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Features
 
-# Step 3: Install the necessary dependencies.
-npm i
+* Image Upload and Verification
+* Error Level Analysis (ELA)
+* Machine Learning-Based Classification
+* Trust Score Generation
+* AI-Generated Image Detection
+* Authenticity Assessment Report
+* Responsive User Interface
+* Dark-Themed Modern Design
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+---
+
+## How It Works
+
+1. User uploads an image.
+2. The image is processed using Error Level Analysis (ELA).
+3. Compression inconsistencies and visual anomalies are identified.
+4. A Machine Learning model analyzes image characteristics.
+5. Results are combined to generate authenticity insights.
+6. The user receives:
+
+   * Trust Score
+   * AI-Generation Probability
+   * Authenticity Assessment
+   * Supporting Analysis Information
+
+---
+
+## System Workflow
+
+```text
+User Uploads Image
+        ↓
+Frontend Interface
+        ↓
+Image Processing
+        ↓
+Error Level Analysis (ELA)
+        ↓
+Machine Learning Classification
+        ↓
+Authenticity Evaluation
+        ↓
+Trust Score & Results Dashboard
 ```
 
-**Edit a file directly in GitHub**
+## Technology Stack
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Frontend
 
-**Use GitHub Codespaces**
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* HTML5
+* CSS3
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Backend
 
-## What technologies are used for this project?
+* Vercel Serverless Functions
+* Node.js
 
-This project is built with:
+### Machine Learning
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+* Hugging Face Inference API
+* Custom ML-Based Image Classification
 
-## How can I deploy this project?
+### Deployment
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+* Vercel
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## Project Architecture
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+```text
+                User
+                  │
+                  ▼
+        React Frontend (Vite)
+                  │
+                  ▼
+          Image Upload Module
+                  │
+                  ▼
+     Vercel Serverless Functions
+                  │
+        ┌─────────┴─────────┐
+        ▼                   ▼
+ Error Level Analysis   ML Classification
+        │                   │
+        └─────────┬─────────┘
+                  ▼
+        Authenticity Evaluation
+                  ▼
+         Results & Trust Score
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+
+## Innovation
+
+Unlike many solutions that rely solely on AI-generated content detection, VeriSight combines:
+
+* Error Level Analysis (ELA)
+* Machine Learning-Based Detection
+
+ELA highlights image regions that show unusual compression behavior, helping reveal potential edits or manipulations.
+
+This hybrid approach improves interpretability and reduces dependence on a single detection method.
+
+---
+
+## Challenges Faced
+
+* Handling diverse image qualities and formats
+* Interpreting ELA outputs accurately
+* Integrating machine learning APIs efficiently
+* Maintaining fast response times
+* Balancing usability with technical analysis
+
+---
+
+## Project Status
+
+### MVP (Minimum Viable Product)
+
+VeriSight is currently a hackathon MVP developed to demonstrate the feasibility of image authenticity verification using ELA and Machine Learning.
+
+Current limitations include:
+
+* Limited training and testing datasets
+* Prototype-level implementation
+* Accuracy may vary across image types
+* Intended primarily for demonstration and educational purposes
+
+---
+
+## Future Scope
+
+Potential future improvements include:
+
+* Larger training datasets
+* Improved model accuracy
+* Support for batch image processing
+* Historical analysis reports
+* User authentication
+* Support for additional content types:
+
+  * News Articles
+  * Text Content
+  * Video Content
+
+---
+
+## Team Matrix3
+
+### Prisha Shekhawat
+
+Project Manager & UI/UX
+
+### Disha
+
+UX Designer
+
+### Kavyansh Upadhyay
+
+Lead Developer
+
+---
+
+## Repository
+
+GitHub Repository:
+https://github.com/Pri-30/VeriSight
+
+---
+
+## License
+
+This project was developed as part of a hackathon and is intended for educational and demonstration purposes.
