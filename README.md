@@ -182,7 +182,7 @@ Potential future improvements include:
 
 ## Team Matrix3
 
-- **Prisha Shekhawat** — Project Manager & UI/UX
+- **Prisha Shekhawat(Team Leader)** — Project Manager & UI/UX
 - **Disha** — UI/UX & Developer
 - **Kavyansh Upadhyay** — Lead Developer
 
